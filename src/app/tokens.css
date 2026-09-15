@@ -1,0 +1,45 @@
+@layer tokens {
+  :root {
+    /* Paleta inspirowana starą kartografią sztabową: atrament, papier, miedź. */
+    --ink-950: #0f1410;
+    --ink-900: #151b15;
+    --ink-800: #1d251d;
+    --ink-700: #283428;
+    --ink-600: #384a38;
+    --ink-500: #506650;
+    --parchment-100: #f4ecda;
+    --parchment-200: #ece0c6;
+    --parchment-300: #ddcda3;
+    --copper-400: #c98a4b;
+    --copper-500: #b06f34;
+    --copper-600: #8f5726;
+    --moss-400: #7c9a6c;
+    --moss-500: #5f7f52;
+    --signal-red: #b2452f;
+
+    --font-display: var(--font-fraunces), "Iowan Old Style", Georgia, serif;
+    --font-body: var(--font-public-sans), "Segoe UI", system-ui, sans-serif;
+
+    --radius-sm: 4px;
+    --radius-md: 10px;
+    --radius-lg: 18px;
+
+    --space-1: 0.4rem;
+    --space-2: 0.8rem;
+    --space-3: 1.4rem;
+    --space-4: 2.2rem;
+    --space-5: 3.6rem;
+    --space-6: 5.6rem;
+
+    --shadow-card: 0 1px 0 rgba(244, 236, 218, 0.06) inset, 0 12px 30px -18px rgba(0, 0, 0, 0.65);
+    --content-max: 74rem;
+
+    color-scheme: dark;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    :root {
+      --motion-ok: 1;
+    }
+  }
+}

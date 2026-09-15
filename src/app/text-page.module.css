@@ -1,0 +1,73 @@
+@layer components {
+  .header {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-3);
+    border-bottom: 1px solid rgba(244, 236, 218, 0.08);
+  }
+
+  .title {
+    font-size: clamp(1.9rem, 3.6vw, 2.6rem);
+    max-width: 30ch;
+  }
+
+  .lede {
+    color: var(--parchment-300);
+    max-width: 60ch;
+    font-size: 1.05rem;
+  }
+
+  .body {
+    max-width: 68ch;
+  }
+
+  .body h2 {
+    font-size: 1.35rem;
+    margin-top: var(--space-5);
+  }
+
+  .body h3 {
+    font-size: 1.1rem;
+    margin-top: var(--space-4);
+  }
+
+  .body p,
+  .body li {
+    color: var(--parchment-200);
+  }
+
+  .updated {
+    display: inline-block;
+    margin-top: var(--space-2);
+    font-size: 0.85rem;
+    color: var(--moss-400);
+  }
+
+  .toc {
+    background: var(--ink-800);
+    border: 1px solid rgba(244, 236, 218, 0.08);
+    border-radius: var(--radius-md);
+    padding: var(--space-3);
+    margin-bottom: var(--space-4);
+  }
+
+  .toc p {
+    margin: 0 0 0.6rem;
+    font-weight: 600;
+  }
+
+  .toc ol {
+    margin: 0;
+    padding-left: 1.2em;
+    display: grid;
+    gap: 0.3rem;
+  }
+
+  .toc a {
+    text-decoration: none;
+    color: var(--copper-400);
+  }
+
+  .toc a:hover {
+    text-decoration: underline;
+  }
+}

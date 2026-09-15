@@ -1,0 +1,58 @@
+@layer components {
+  .bar {
+    position: fixed;
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100;
+    max-width: 46rem;
+    margin-inline: auto;
+    background: var(--ink-800);
+    border: 1px solid rgba(244, 236, 218, 0.14);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    padding: var(--space-3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .text {
+    flex: 1 1 20rem;
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--parchment-200);
+  }
+
+  .text a {
+    color: var(--copper-400);
+    text-decoration: underline;
+  }
+
+  .actions {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .accept {
+    background: var(--copper-500);
+    color: var(--ink-950);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 0.55rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .decline {
+    background: transparent;
+    color: var(--parchment-200);
+    border: 1px solid rgba(244, 236, 218, 0.24);
+    border-radius: var(--radius-sm);
+    padding: 0.55rem 1rem;
+    cursor: pointer;
+  }
+}
