@@ -32,10 +32,8 @@ export default function KontaktPage() {
               </a>
             </p>
             <p style={{ fontSize: "0.9rem", color: "var(--moss-400)" }}>
-              Adres oparty jest na docelowej domenie, która zostanie
-              podpięta po jej przydzieleniu – do tego czasu wiadomości warto
-              kierować z zaznaczeniem tematu, żeby łatwiej je odnaleźć wśród
-              korespondencji.
+              Adres korzysta z domeny serwisu. Dostarczanie wiadomości zależy
+              od tego, czy poczta dla tej domeny została skonfigurowana.
             </p>
 
             <h2>Czego dotyczyć mogą wiadomości</h2>

@@ -1,7 +1,6 @@
-// Miejsce na docelową domenę – zostanie uzupełnione po jej przydzieleniu.
-export const SITE_DOMAIN_PLACEHOLDER = "domena-w-przygotowaniu.pl";
-export const SITE_URL = `https://${SITE_DOMAIN_PLACEHOLDER}`;
-export const CONTACT_EMAIL = `kontakt@${SITE_DOMAIN_PLACEHOLDER}`;
+export const SITE_DOMAIN = "hlantoob.biz";
+export const SITE_URL = `https://${SITE_DOMAIN}`;
+export const CONTACT_EMAIL = `kontakt@${SITE_DOMAIN}`;
 
 export const NAV_LINKS = [
   { href: "/", label: "Start" },

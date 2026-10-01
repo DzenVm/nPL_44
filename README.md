@@ -35,17 +35,19 @@ npm run start
   kampanii w Google Ads (polityka prywatności, regulamin, dane kontaktowe).
 - `src/components` – header, footer, baner zgody na cookies (RODO) oraz
   ilustracje SVG.
-- `src/lib/site.ts` – pojedyncze miejsce z placeholderem domeny i adresu
-  kontaktowego.
+- `src/lib/site.ts` – domena witryny oraz wynikający z niej adres kontaktowy.
 
-## Do zrobienia po przydzieleniu domeny
+## Domena
 
-1. W `src/lib/site.ts` podmienić `SITE_DOMAIN_PLACEHOLDER` na docelową domenę
-   – zmiana automatycznie zaktualizuje adres kontaktowy, `sitemap.xml`,
-   `robots.txt` oraz metadane Open Graph.
-2. W `src/app/prywatnosc/page.tsx` uzupełnić docelowe dane rejestrowe
-   administratora danych, jeśli będą inne niż kontakt e-mail.
-3. Jeśli kampania w Google Ads ma korzystać z pomiaru konwersji, dodać
+Adres witryny ustawiony jest na `https://hlantoob.biz` w `src/lib/site.ts`.
+Ta wartość aktualizuje adres kontaktowy, `sitemap.xml`, `robots.txt`,
+canonical URL i metadane Open Graph. Dodaj domenę do hostingu i ustaw rekordy
+DNS zgodnie z instrukcjami dostawcy hostingu. Skonfiguruj też skrzynkę
+`kontakt@hlantoob.biz`, jeśli ma przyjmować pocztę.
+
+Przed uruchomieniem uzupełnij w `src/app/prywatnosc/page.tsx` docelowe dane
+rejestrowe administratora danych, jeśli będą inne niż kontakt e-mail.
+Jeśli kampania w Google Ads ma korzystać z pomiaru konwersji, dodaj
    odpowiedni fragment kodu pomiarowego w `src/app/layout.tsx` dopiero po
    otrzymaniu docelowego identyfikatora – celowo nie umieszczono tu żadnego
    przykładowego/testowego identyfikatora pomiarowego.
@@ -59,5 +61,5 @@ regionem `fra1` (Frankfurt – najniższe opóźnienia dla ruchu z Polski).
 2. Vercel wykryje Next.js automatycznie – nie trzeba nic dodatkowo
    konfigurować, komenda builda to `next build`, katalog wyjściowy
    ustawiany jest automatycznie przez adapter Next.js.
-3. Po pierwszym deployu podepnij docelową domenę w zakładce Domains,
-   pamiętając o wcześniejszej podmianie placeholdera opisanej wyżej.
+3. Po pierwszym deployu podepnij `hlantoob.biz` w zakładce Domains i ustaw
+   rekordy DNS wskazane przez Vercel.
